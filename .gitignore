@@ -39,8 +39,8 @@ logs/
 # Generated assets (stored in cloud)
 generated/
 
-# Models (too large for git)
-models/
+# Models (too large for git) - ML model files, not src/models/
+/models/
 *.safetensors
 *.ckpt
 *.pt

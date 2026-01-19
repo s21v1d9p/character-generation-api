@@ -7,7 +7,8 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
-| #1148 | 5:38 PM | 🔵 | Local Filesystem Storage Provider for Development Testing | ~354 |
+| #1149 | 5:38 PM | 🔄 | Local Storage Provider Refactored to Match BaseStorageProvider Interface | ~430 |
+| #1148 | " | 🔵 | Local Filesystem Storage Provider for Development Testing | ~354 |
 | #1147 | 5:37 PM | 🟣 | Local Storage Provider Added to Storage Manager Factory | ~348 |
 | #1146 | 5:36 PM | 🟣 | Local Filesystem Storage Provider for Development and Testing | ~425 |
 | #1118 | 4:51 PM | 🔵 | S3 Storage Provider with Async Wrapper for Boto3 | ~392 |

@@ -1,0 +1,118 @@
+Here is exactly what I need. I will handle the UI, so your focus is the backend and GPU pipeline that I will connect to via API.
+
+PROJECT SUMMARY
+
+Backend for Modular, Scalable AI Character Image and Video Generation (LoRA Based, Easy Character Creation)**
+
+I need a backend system that generates high quality images and video clips of recurring characters, each defined by a LoRA.
+The backend must be API driven, modular, and scalable.
+I will build a separate UI that talks to your API.
+
+A major requirement is that I must be able to create new characters easily by providing reference images, without pipeline rewrites or manual intervention.
+
+1. LoRA Based Character System
+
+(Important: I provide images, system trains the LoRA automatically)
+
+Each character in the system will be represented by a LoRA file.
+
+Critical requirement:
+I must be able to create new characters by simply providing ~20 reference images and a chosen character name.
+
+The system should then:
+	1.	Run a standardized LoRA training process
+	2.	Output a .safetensors LoRA file for that character
+	3.	Automatically register that LoRA in the character library
+	4.	Make the new character instantly usable through the API
+
+I do not want to manually run training scripts, edit configs, or modify workflows.
+
+Additional LoRA requirements:
+	•	The training pipeline should be standardized and repeatable.
+	•	Adding characters should be fast.
+	•	The backend must dynamically load the correct LoRA file based on character_id.
+	•	No duplication of workflows or backend logic when new characters are added.
+
+This “drop in images → get a new character” workflow is a key part of the project.
+
+You will deliver a clean API that I can connect to from my own UI.
+
+Required endpoints:
+
+Character Management
+	•	List characters
+	•	Register a new character (LoRA file created via the automated training pipeline)
+	•	Store metadata for each character
+
+Generation
+	•	POST /generate-image
+	•	POST /generate-video
+
+Inputs include:
+	•	character_id
+	•	Prompt
+	•	Any image or video settings
+
+Outputs:
+	•	Cloud storage URLs for the generated assets
+
+The API should hide all the complexity of ComfyUI or underlying model orchestration.
+
+3. GPU Pipeline (RunPod preferred)
+
+You will set up a GPU pipeline that:
+	•	Runs ComfyUI or an equivalent backend engine
+	•	Uses SDXL as the base model (or another high quality model)
+	•	Loads the appropriate LoRA dynamically per request
+	•	Generates character consistent still images
+	•	Generates videos using an image to video model (Stable Video Diffusion, etc)
+	•	Saves results to cloud storage
+	•	Integrates cleanly with the API layer
+
+Once set up, I should never need to manually interact with ComfyUI.
+
+4. Modularity and Scalability (Very Important)
+
+The architecture must make it easy to scale to many characters.
+
+Specifically:
+	•	Adding new LoRAs must require no changes to workflows
+	•	LoRAs must be treated as drop in, parameter driven assets
+	•	The same generation workflow should serve all characters
+	•	The system should be built in a way that supports multiple GPU pods later
+	•	The backend must allow new models or workflows to be plugged in later without major rewrites
+
+I need a long term foundation, not a rigid one off build.
+
+5. Asset Storage
+
+All generated assets must:
+	•	Be saved to cloud storage (S3, Supabase, or similar)
+	•	Have clean URLs returned via the API
+	•	Be organized in a way that supports many characters and future projects
+
+⸻
+
+Summary of Your Deliverable
+
+You will deliver:
+	1.	A backend service with clean API endpoints for:
+	•	listing characters
+	•	registering new characters (including running the LoRA training pipeline when I provide the images)
+	•	generating images
+	•	generating videos
+	2.	A GPU powered generation pipeline that:
+	•	dynamically loads LoRAs
+	•	supports consistent character image generation
+	•	supports character consistent video generation
+	3.	A modular, scalable architecture where:
+	•	I can create new characters simply by providing ~20 images
+	•	The system trains the LoRA and makes it immediately usable
+	•	Adding new characters is fast and requires no workflow modifications
+	•	Future scaling to additional GPU pods is possible
+
+I will build the UI separately and connect it to your API.
+
+Let me know if everything here is clear and if you need anything else from me before starting.
+
+

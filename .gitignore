@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+*.egg
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Build
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Generated assets (stored in cloud)
+generated/
+
+# Models (too large for git)
+models/
+*.safetensors
+*.ckpt
+*.pt
+
+# Jupyter
+.ipynb_checkpoints/

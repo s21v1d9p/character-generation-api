@@ -12,6 +12,9 @@ def get_storage_provider() -> BaseStorageProvider:
     elif settings.storage_provider == "supabase":
         from src.services.storage.supabase_provider import SupabaseStorageProvider
         return SupabaseStorageProvider()
+    elif settings.storage_provider == "local":
+        from src.services.storage.local_provider import LocalStorageProvider
+        return LocalStorageProvider()
     else:
         raise ValueError(f"Unknown storage provider: {settings.storage_provider}")
 

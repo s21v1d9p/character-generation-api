@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     comfyui_http_url: str = "http://localhost:8188"
 
     # Storage
-    storage_provider: Literal["s3", "supabase"] = "s3"
+    storage_provider: Literal["s3", "supabase", "local"] = "s3"
 
     # S3
     aws_access_key_id: str = ""

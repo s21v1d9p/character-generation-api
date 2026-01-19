@@ -7,6 +7,7 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #1145 | 5:36 PM | 🟣 | Local Storage Provider Option Added to Configuration | ~330 |
 | #1120 | 4:52 PM | 🔵 | Type Alias for Database Session Dependency Injection | ~358 |
 | #1109 | 4:49 PM | 🔵 | Async SQLAlchemy Database Configuration with Session Management | ~385 |
 | #1100 | 4:47 PM | 🔵 | Pydantic Settings with Type-Safe Configuration Management | ~373 |

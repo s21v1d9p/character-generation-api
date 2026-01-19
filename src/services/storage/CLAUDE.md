@@ -7,6 +7,9 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #1148 | 5:38 PM | 🔵 | Local Filesystem Storage Provider for Development Testing | ~354 |
+| #1147 | 5:37 PM | 🟣 | Local Storage Provider Added to Storage Manager Factory | ~348 |
+| #1146 | 5:36 PM | 🟣 | Local Filesystem Storage Provider for Development and Testing | ~425 |
 | #1118 | 4:51 PM | 🔵 | S3 Storage Provider with Async Wrapper for Boto3 | ~392 |
 | #1106 | 4:48 PM | 🔵 | Storage Abstraction with Lazy Provider Initialization | ~379 |
 </claude-mem-context>

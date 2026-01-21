@@ -71,7 +71,7 @@ async def generate_image(
     )
 
     db.add(generation)
-    await db.flush()
+    await db.commit()
     await db.refresh(generation)
 
     # Start generation in background
@@ -128,7 +128,7 @@ async def generate_video(
     )
 
     db.add(generation)
-    await db.flush()
+    await db.commit()
     await db.refresh(generation)
 
     # Start generation in background

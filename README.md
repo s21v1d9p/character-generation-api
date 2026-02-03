@@ -66,10 +66,6 @@ curl -X POST http://localhost:8000/generate-image \
   }'
 ```
 
-## Architecture
-
-See [CLAUDE.md](CLAUDE.md) for detailed architecture documentation.
-
 ## Requirements
 
 - Python 3.10+

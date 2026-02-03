@@ -49,7 +49,6 @@ class S3StorageProvider(BaseStorageProvider):
             Key=path,
             Body=data,
             ContentType=content_type,
-            ACL="public-read",
         )
 
         return self.get_url_sync(path)
